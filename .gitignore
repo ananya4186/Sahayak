@@ -2,4 +2,9 @@
 .env
 __pycache__/
 .pytest_cache/
+*.pyc.venv/
+.env
+__pycache__/
+.pytest_cache/
 *.pyc
+Sahayak_Project_Problem_Statement_and_Complete_Understanding.pdf
