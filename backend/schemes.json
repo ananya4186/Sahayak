@@ -1,0 +1,319 @@
+[
+  {
+    "id": "pm-usp-csss",
+    "name": "PM-USP CSSS",
+    "category": "Education",
+    "official_source_url": "https://scholarships.gov.in/public/schemeGuidelines/FAQ_DOHE_CSSS.pdf",
+    "official_apply_url": "https://scholarships.gov.in/",
+    "last_verified": "2026-11-11",
+    "description": "Merit-cum-means scholarship for college and university students, applied for on the National Scholarship Portal.",
+    "assessable": true,
+    "explanation": "This is a preliminary check of the configured CSSS criteria. Official application and verification processes still apply.",
+    "rules": [
+      {
+        "field": "class12_percentile",
+        "operator": "gt",
+        "value": 80,
+        "label": "Class 12 percentile is above the 80th percentile for the relevant board and stream"
+      },
+      {
+        "field": "is_student",
+        "operator": "is_true",
+        "label": "Currently pursuing a degree course"
+      },
+      {
+        "field": "regular_degree_course",
+        "operator": "is_true",
+        "label": "Course is regular mode and is not a diploma"
+      },
+      {
+        "field": "institution_recognized",
+        "operator": "is_true",
+        "label": "Institution meets the relevant recognition requirement"
+      },
+      {
+        "field": "annual_family_income",
+        "operator": "lte",
+        "value": 450000,
+        "label": "Annual family income is at most ₹4.5 lakh",
+        "note": "The guidelines say 'up to Rs. 4.5 lakh' while the FAQ says 'less than Rs. 4.5 lakh'. The guidelines wording is used here."
+      },
+      {
+        "field": "receives_other_scholarship",
+        "operator": "is_false",
+        "label": "Not receiving another scholarship or fee reimbursement"
+      }
+    ],
+    "benefits": [
+      "₹12,000 per year at graduation level for the first three years of study.",
+      "₹20,000 per year at post-graduation level.",
+      "For 5-year professional or integrated courses: ₹20,000 per year in the 4th and 5th year.",
+      "For B.Tech/B.E.: ₹12,000 per year for the first three years and ₹20,000 in the 4th year.",
+      "Total duration is up to 5 years and is renewed year by year, subject to renewal conditions.",
+      "Paid by Direct Benefit Transfer (DBT) into the student's own bank account."
+    ],
+    "documents": {
+      "mandatory": [
+        "Aadhaar number",
+        "Bank passbook or account details (account must be in the applicant's own name, and the Aadhaar should be linked to it)",
+        "Class 12 mark sheet (keep a copy ready for verification by the institution)",
+        "Valid mobile number",
+        "Email ID"
+      ],
+      "conditional": [
+        "Parental or family income certificate (fresh applicants)",
+        "Caste or category certificate, wherever required",
+        "Disability certificate, wherever required"
+      ]
+    },
+    "application_steps": [
+      "Keep your documents ready. No documents are uploaded during the online application, but the institution checks copies during verification.",
+      "Register on the National Scholarship Portal (NSP) and fill in your personal details.",
+      "Choose the 'Post-Matric' option and then select the Central Sector Scheme of Scholarship for College and University Students.",
+      "Enter your name, father's name and roll number exactly as they appear on your Class 12 mark sheet, and select your Class 12 board correctly.",
+      "Select your institution carefully (use the AISHE code if several institutions have similar names). A wrong selection cannot be corrected after final submission.",
+      "Click 'Confirm and Submit'. Your institution and then the State Nodal Agency verify the application. An application that is not verified is treated as invalid.",
+      "Note your Permanent ID, which you need to check your status and to apply for renewal every year."
+    ],
+    "sources": [
+      {
+        "title": "PM-USP CSSS guidelines and FAQ (Ministry of Education, on NSP)",
+        "url": "https://scholarships.gov.in/public/schemeGuidelines/FAQ_DOHE_CSSS.pdf"
+      }
+    ]
+  },
+  {
+    "id": "pmegp",
+    "name": "PMEGP",
+    "category": "Employment and enterprise",
+    "official_source_url": "https://common-pmegp.msme.gov.in/",
+    "official_apply_url": "https://common-pmegp.msme.gov.in/",
+    "last_verified": "2026-11-12",
+    "description": "Credit-linked subsidy for setting up new micro-enterprises, run by the Ministry of MSME through KVIC.",
+    "assessable": false,
+    "not_assessed_reason": "Sahayak does not assess PMEGP eligibility. The applicant, project and activity conditions depend on the current official guidelines, and the guideline document available here covers 2021-22 to 2025-26. Confirm the current rules on the official portal.",
+    "status_notice": "The PMEGP guideline checked for this app covers 2021-22 to 2025-26. A news report of a Rajya Sabha reply said the scheme was in continuation only up to 31 March 2026, with continuation for the next five years still awaiting approval. Check the official portal for the current status before you plan an application.",
+    "rules": [],
+    "benefits": [
+      "Margin money subsidy on the project cost. Under the 2021-26 guideline: general category 15% (urban) or 25% (rural); special categories such as SC, ST, OBC, minorities, women, ex-servicemen, transgender persons, persons with disabilities and notified areas 25% (urban) or 35% (rural). Please confirm the rates in clause 3.2 of the official guideline.",
+      "Maximum project cost counted for subsidy: ₹50 lakh for manufacturing and ₹20 lakh for business or service units.",
+      "The bank finances the rest of the project cost. The guideline says the bank sanctions 90% of the project cost for the general category and 95% for special categories, so your own contribution is 10% or 5%.",
+      "The subsidy is held in a term deposit in your name for 3 years before it is adjusted against the loan."
+    ],
+    "documents": {
+      "mandatory": [
+        "Aadhaar number (verified against the UIDAI database; the guideline lists other ID options only for people without Aadhaar in some areas)",
+        "Photograph",
+        "Project report"
+      ],
+      "conditional": [
+        "Caste certificate, if you claim a special category",
+        "Special category certificate, wherever required",
+        "Rural area certificate, if the unit is in a rural area",
+        "Education certificate: at least Class 8 pass for projects above ₹10 lakh (manufacturing) or ₹5 lakh (business/service)",
+        "Entrepreneurship Development Programme (EDP) or skill training certificate: EDP training is required before the bank releases the loan for most projects",
+        "Any other document the guideline lists as applicable"
+      ]
+    },
+    "application_steps": [
+      "Applications are online only, through the official PMEGP portal. Manual applications are not accepted.",
+      "Register with your Aadhaar number and fill in the application form for a new unit.",
+      "Upload the photograph, project report and the other documents that apply to you.",
+      "Submit the application to get an application ID, which you use to track the status.",
+      "The implementing agency (KVIC, a State KVIB or a District Industries Centre) checks the application and forwards it to a bank.",
+      "The bank decides on the loan. If it sanctions the loan, complete the EDP training, deposit your own contribution and the bank releases the loan."
+    ],
+    "sources": [
+      {
+        "title": "PMEGP scheme guidelines, revised December 2023 (Ministry of MSME, on KVIC portal)",
+        "url": "https://www.kviconline.gov.in/pmegpeportal/dashboard/notification/Revised_PMEGP_Scheme_Guidelines_07122023_compressed.pdf"
+      }
+    ]
+  },
+  {
+    "id": "pm-daksh",
+    "name": "PM-DAKSH",
+    "category": "Skill development",
+    "official_source_url": "https://socialjustice.gov.in/public/ckeditor/upload/44071717524542.pdf",
+    "official_apply_url": "https://pmdaksh.dosje.gov.in/",
+    "last_verified": "2026-11-11",
+    "description": "Skill development training for eligible target groups (SC, OBC, EWS, DNT, Safai Mitras and waste pickers), run by the Ministry of Social Justice and Empowerment.",
+    "assessable": true,
+    "explanation": "This is a preliminary check of configured PM-DAKSH criteria. Indian nationality and the requirements of the chosen job role are not checked here and must be confirmed officially.",
+    "rules": [
+      {
+        "field": "social_category",
+        "operator": "in",
+        "value": [
+          "sc",
+          "obc",
+          "ews",
+          "dnt",
+          "safai mitra",
+          "safai karamchari",
+          "waste picker"
+        ],
+        "label": "Category is one of the groups listed in the PM-DAKSH guidelines"
+      },
+      {
+        "field": "age",
+        "operator": "between",
+        "value": [
+          18,
+          45
+        ],
+        "label": "Age is between 18 and 45 years"
+      },
+      {
+        "field": "aadhaar_linked_bank_account",
+        "operator": "is_true",
+        "label": "Aadhaar-linked bank account requirement is met or an official exemption applies"
+      },
+      {
+        "field": "course_role_requirements_met",
+        "operator": "is_true",
+        "label": "Requirements for the chosen course or job role are met"
+      },
+      {
+        "field": "annual_family_income",
+        "operator": "lt",
+        "value": 300000,
+        "label": "Annual family income is below ₹3 lakh for OBC/EWS",
+        "applies_when": {
+          "field": "social_category",
+          "in": [
+            "obc",
+            "ews"
+          ]
+        }
+      }
+    ],
+    "benefits": [
+      "Skill training in job roles, including entrepreneurship development programmes (EDP). The training cost is covered under the scheme, and the assessment fee and one free re-assessment are included.",
+      "Stipend for non-residential training: ₹1,500 per month for SC candidates and for Safai Mitras, waste pickers and their dependents; ₹1,000 per month for OBC, EWS and DNT candidates.",
+      "For residential training, boarding and lodging are provided and no separate stipend is paid, except ₹500 per month for Safai Mitras, waste pickers and their dependents.",
+      "Safai Mitras and waste pickers can also join up-skilling or re-skilling under Recognition of Prior Learning (RPL), about 35 hours long, with a stipend of ₹500 per person.",
+      "The stipend is paid by DBT to your bank account only if your attendance is at least 70%. You also need 70% attendance to appear in the assessment.",
+      "A certificate is given after you complete the assessment."
+    ],
+    "documents": {
+      "mandatory": [
+        "Aadhaar card (the guidelines give an exemption for candidates in States that have not fully implemented Aadhaar)",
+        "Details of an Aadhaar-linked bank account"
+      ],
+      "conditional": [
+        "Proof of your category (SC, OBC, EWS, DNT, Safai Mitra or waste picker), as the portal asks",
+        "Proof of annual family income for OBC and EWS applicants, because the income must be below ₹3 lakh. The portal tells you which certificate it accepts.",
+        "Any other document that the chosen job role or training centre asks for"
+      ]
+    },
+    "application_steps": [
+      "Check that you are eligible: SC, OBC, EWS, DNT, Safai Mitra or waste picker; Indian national; age 18 to 45; and, for OBC and EWS, family income below ₹3 lakh.",
+      "Register on the Skill India Digital Hub (SIDH). Your profile is verified through an OTP sent to your mobile number (e-KYC).",
+      "Use the online counselling on SIDH to choose a course, job role and training centre.",
+      "Attend the training in person at the training centre, because training is classroom-based.",
+      "Keep your attendance at 70% or more to get the stipend and to appear in the assessment.",
+      "Pass the assessment to receive your certificate.",
+      "The official PM-DAKSH portal also has the scheme details and eligibility information."
+    ],
+    "sources": [
+      {
+        "title": "PM-DAKSH Scheme Guidelines 2024-25 (Department of Social Justice and Empowerment)",
+        "url": "https://socialjustice.gov.in/public/ckeditor/upload/44071717524542.pdf"
+      },
+      {
+        "title": "PM-DAKSH scheme page on the ministry website (guidelines and corrigenda)",
+        "url": "https://socialjustice.gov.in/schemes/100"
+      },
+      {
+        "title": "PM-DAKSH on myScheme (Government of India)",
+        "url": "https://myscheme.gov.in/schemes/pm-daksh"
+      }
+    ],
+    "status_notice": "These details come from the PM-DAKSH guidelines 2024-25 (dated 1 June 2024). The ministry also lists a corrigendum from January 2025 that has not been checked here. Confirm the current rules on the official page before you apply."
+  },
+  {
+    "id": "pm-sym",
+    "name": "PM-SYM",
+    "category": "Pension and social security",
+    "official_source_url": "https://maandhan.in/",
+    "official_apply_url": "https://maandhan.in/",
+    "last_verified": "2026-11-06",
+    "description": "Voluntary, contributory pension scheme for unorganised workers, run by the Ministry of Labour and Employment.",
+    "assessable": true,
+    "explanation": "This is a preliminary check of configured PM-SYM entry criteria. Enrolment and contribution requirements still apply.",
+    "rules": [
+      {
+        "field": "is_unorganised_worker",
+        "operator": "is_true",
+        "label": "Applicant is an unorganised worker"
+      },
+      {
+        "field": "age",
+        "operator": "between",
+        "value": [
+          18,
+          40
+        ],
+        "label": "Entry age is between 18 and 40 years"
+      },
+      {
+        "field": "monthly_income",
+        "operator": "lte",
+        "value": 15000,
+        "label": "Monthly income is at most ₹15,000"
+      },
+      {
+        "field": "epfo_covered",
+        "operator": "is_false",
+        "label": "Not covered by EPFO"
+      },
+      {
+        "field": "esic_covered",
+        "operator": "is_false",
+        "label": "Not covered by ESIC"
+      },
+      {
+        "field": "nps_covered",
+        "operator": "is_false",
+        "label": "Not covered by NPS"
+      },
+      {
+        "field": "income_tax_payer",
+        "operator": "is_false",
+        "label": "Not an income-tax payer"
+      }
+    ],
+    "benefits": [
+      "A minimum assured pension of ₹3,000 per month after the age of 60.",
+      "You contribute a monthly amount that depends on your age at entry, and the Central Government adds an equal matching contribution.",
+      "The scheme is voluntary and contributory."
+    ],
+    "documents": {
+      "mandatory": [
+        "Aadhaar card",
+        "Savings bank or Jan Dhan account details with IFSC code (passbook, cheque leaf or bank statement)"
+      ],
+      "conditional": [
+        "Initial contribution amount in cash at enrolment"
+      ]
+    },
+    "application_steps": [
+      "Visit your nearest Common Services Centre (CSC) with your Aadhaar card and bank account details.",
+      "The centre enrols you on a self-certification basis for the eligibility conditions.",
+      "Pay your first contribution in cash. Later contributions are deducted automatically from your bank account.",
+      "Sign the enrolment form that includes the auto-debit mandate. You then receive a pension account number and a card.",
+      "Self-registration on the official PM-SYM portal or app is also offered where available, so check the portal."
+    ],
+    "sources": [
+      {
+        "title": "PM-SYM enrolment and scheme details (india.gov.in)",
+        "url": "https://www.india.gov.in/spotlight/pradhanmantri-shram-yogi-maan-dhan-pm-sym-pension-scheme-unorganised-workers"
+      },
+      {
+        "title": "PM-SYM enrolment process (Ministry of Labour and Employment)",
+        "url": "https://labour.gov.in/enrolment-process"
+      }
+    ]
+  }
+]

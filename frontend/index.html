@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore government schemes by the kind of support you need." />
+    <title>Sahayak — Government Scheme Finder</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="#">Sahayak</a>
+        <span class="header-note">Government scheme discovery</span>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <p class="eyebrow">Find support for your goal</p>
+            <h1>Government schemes, made easier to explore.</h1>
+            <p>
+                Choose the kind of support you are looking for. Sahayak will show
+                relevant schemes and explain which information is matched or missing.
+            </p>
+        </section>
+
+        <section class="card" aria-labelledby="profile-heading">
+            <h2 id="profile-heading">What support are you looking for?</h2>
+            <p class="section-note">
+                Choose one goal. You can come back and check another category later.
+            </p>
+
+            <form id="profile-form">
+                <label>
+                    Support category
+                    <select name="goal" required>
+                        <option value="">Choose a category</option>
+                        <option value="education">Education and scholarships</option>
+                        <option value="business">Business and self-employment</option>
+                        <option value="skills">Skill development and training</option>
+                        <option value="pension">Pension and social security</option>
+                    </select>
+                </label>
+
+                <h3>Basic details</h3>
+                <div class="form-grid">
+                    <label>Age
+                        <input type="number" name="age" min="0" step="1" />
+                    </label>
+
+                    <label>State or region
+                        <input type="text" name="state" placeholder="e.g., Karnataka" />
+                    </label>
+
+                    <label>Are you currently a student?
+                        <select name="is_student">
+                            <option value="">Choose an option</option>
+                            <option value="true">Yes</option>
+                            <option value="false">No</option>
+                        </select>
+                    </label>
+
+                    <label>Education level
+                        <input type="text" name="education_level" placeholder="e.g., Undergraduate" />
+                    </label>
+
+                    <label>Annual family income (₹)
+                        <input type="number" name="annual_family_income" min="0" step="1" />
+                    </label>
+
+                    <label>Monthly personal income (₹)
+                        <input type="number" name="monthly_income" min="0" step="1" />
+                    </label>
+
+                    <label>Employment status
+                        <input type="text" name="employment_status" placeholder="e.g., Student, employed, unemployed" />
+                    </label>
+
+                    <label>Social category
+                        <select name="social_category">
+                            <option value="">Choose if applicable</option>
+                            <option value="SC">SC</option>
+                            <option value="ST">ST</option>
+                            <option value="OBC">OBC</option>
+                            <option value="EWS">EWS</option>
+                            <option value="DNT">DNT</option>
+                            <option value="Safai Mitra">Safai Mitra</option>
+                            <option value="General">General</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </label>
+                </div>
+
+                <section class="goal-fields" data-goal-fields="education">
+                    <h3>Education and scholarship details</h3>
+                    <div class="form-grid">
+                        <label>Class 12 percentile for your board and stream (0–100)
+                            <input type="number" name="class12_percentile" min="0" max="100" step="0.01" />
+                        </label>
+
+                        <label>Are you pursuing a regular degree course, not a diploma?
+                            <select name="regular_degree_course">
+                                <option value="">Choose an option</option>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+                        </label>
+
+                        <label>Does your institution meet the relevant recognition requirement?
+                            <select name="institution_recognized">
+                                <option value="">Choose an option</option>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+                        </label>
+
+                        <label>Are you receiving another scholarship or fee reimbursement?
+                            <select name="receives_other_scholarship">
+                                <option value="">Choose an option</option>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+                        </label>
+                    </div>
+                </section>
+
+                <section class="goal-fields" data-goal-fields="skills">
+                    <h3>Skill training details</h3>
+                    <div class="form-grid">
+                        <label>Do you have an Aadhaar-linked bank account, or an official exemption?
+                            <select name="aadhaar_linked_bank_account">
+                                <option value="">Choose an option</option>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+                        </label>
+
+                        <label>Do you meet the chosen course or job-role requirements?
+                            <select name="course_role_requirements_met">
+                                <option value="">Choose an option</option>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+                        </label>
+                    </div>
+                </section>
+
+                <section class="goal-fields" data-goal-fields="pension">
+                    <h3>Pension and social security details</h3>
+                    <div class="form-grid">
+                        <label>Are you an unorganised worker?
+                            <select name="is_unorganised_worker">
+                                <option value="">Choose an option</option>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+                        </label>
+
+                        <label>Covered by EPFO?
+                            <select name="epfo_covered">
+                                <option value="">Choose an option</option>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+                        </label>
+
+                        <label>Covered by ESIC?
+                            <select name="esic_covered">
+                                <option value="">Choose an option</option>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+                        </label>
+
+                        <label>Covered by NPS?
+                            <select name="nps_covered">
+                                <option value="">Choose an option</option>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+                        </label>
+
+                        <label>Are you an income-tax payer?
+                            <select name="income_tax_payer">
+                                <option value="">Choose an option</option>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+                        </label>
+                    </div>
+                </section>
+
+                <button type="submit">Find relevant schemes</button>
+            </form>
+
+            <div id="result" class="result" role="status" aria-live="polite"></div>
+        </section>
+
+        <section class="card" aria-labelledby="recommendations-heading">
+            <h2 id="recommendations-heading">Recommendations</h2>
+            <p class="section-note">
+                These are preliminary rule matches, not an official eligibility decision.
+            </p>
+            <div id="recommendations" class="recommendations">
+                <p>Choose a support category and submit your profile to see relevant results.</p>
+            </div>
+        </section>
+
+        <section class="card" aria-labelledby="schemes-heading">
+            <h2 id="schemes-heading">Schemes by category</h2>
+            <div id="scheme-list">
+                <p>Loading schemes…</p>
+            </div>
+        </section>
+
+        <p class="disclaimer">
+            Sahayak does not submit applications or guarantee eligibility or government
+            approval. Always confirm requirements with the official scheme source.
+        </p>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
