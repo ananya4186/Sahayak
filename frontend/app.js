@@ -1,4 +1,8 @@
-const API_BASE_URL = "http://127.0.0.1:8000";
+// With Live Server (port 5500) the API is on port 8000.
+// When the backend serves the page itself (local port 8000 or the deployed
+// site), the API is on the same address, so no base URL is needed.
+const API_BASE_URL =
+    window.location.port === "5500" ? "http://127.0.0.1:8000" : "";
 
 const form = document.querySelector("#profile-form");
 const result = document.querySelector("#result");

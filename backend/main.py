@@ -4,18 +4,27 @@ from typing import Optional
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, validator
 
 app = FastAPI(title="Sahayak API")
 
+# CORS is only needed when the page is opened with Live Server (port 5500)
+# while the API runs on port 8000. When the app is deployed, the backend
+# serves the page itself, so the page and the API share one address.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Local development only
+    allow_origins=[
+        "http://127.0.0.1:5500",
+        "http://localhost:5500",
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-SCHEMES_FILE = Path(__file__).with_name("schemes.json")
+BASE_DIR = Path(__file__).resolve().parent
+SCHEMES_FILE = BASE_DIR / "schemes.json"
+FRONTEND_DIR = BASE_DIR.parent / "frontend"
 
 GOAL_TO_SCHEME_IDS = {
     "education": {"pm-usp-csss"},
@@ -225,8 +234,8 @@ def build_recommendation(scheme, profile):
     return recommendation
 
 
-@app.get("/")
-def home():
+@app.get("/health")
+def health():
     return {"message": "Sahayak API is running"}
 
 
@@ -271,3 +280,14 @@ def recommend_schemes(profile: Profile):
             for scheme in selected_schemes
         ],
     }
+
+
+# Serve the frontend (index.html, app.js, style.css) from the same server.
+# This must stay at the very END of the file, after every API route,
+# so that /api/... requests are matched by the routes above first.
+if FRONTEND_DIR.is_dir():
+    app.mount(
+        "/",
+        StaticFiles(directory=FRONTEND_DIR, html=True),
+        name="frontend",
+    )
